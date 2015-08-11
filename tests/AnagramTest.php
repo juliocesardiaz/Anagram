@@ -8,7 +8,14 @@
 			//Arrange
 			$test = new Anagram;
 			$inputWord = "ear";
-			$inputList = array("dog", "bat", "era")
+			$inputList = array("dog", "bat", "era");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("era");
+			//Assert
+			$this->assertEquals($answer, $result);
 			
 		}
 	}
