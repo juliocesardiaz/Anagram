@@ -1,0 +1,19 @@
+Specs for Anagram Checker
+1) Handle single letter input
+	Input: I, (I)
+	Output: no anagram, single letter words are not anagrams
+2) Check if the word matches itself
+	Input: An, (An)
+	Output: no anagram, a word can not match itself
+3) Handle a 2 letter word with a short list of possible 2 letter matches
+	Input: Am, (Ma, No)
+	Ouput: Ma
+4) Handle a 3 letter word with list of possible 3 letter matches
+	Input: arm, (ram, man, the)
+	Output: ram
+5) Handle a 4 letter word with list of possible 4 letter matches
+	Input: laws, (slaw, ears, dogs)
+	Output: slaw
+6) Handle an input word with a list of different sized words (only return same length words)
+	Input: stab (bats, cat, doggy)
+	Output: bats
