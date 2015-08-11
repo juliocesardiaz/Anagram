@@ -84,7 +84,7 @@
 			//Arrange
 			$test = new Anagram;
 			$inputWord = "cars";
-			$inputList = array("scar", "ears", "dogs");
+			$inputList = array("scar", "ears", "dogs", "banana");
 			
 			//Act
 			$result = $test->checkAnagram($inputWord, $inputList);
