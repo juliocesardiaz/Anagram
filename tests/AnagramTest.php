@@ -84,12 +84,27 @@
 			//Arrange
 			$test = new Anagram;
 			$inputWord = "cars";
-			$inputList = array("scar", "ears", "dogs", "scars");
+			$inputList = array("scar", "ears", "dogs");
 			
 			//Act
 			$result = $test->checkAnagram($inputWord, $inputList);
 			
 			$answer = array("scar");
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
+		
+		function testPartialAnagram()
+		{
+			//Arrange
+			$test = new Anagram;
+			$inputWord = "hat";
+			$inputList = array("scar", "ears", "dogs", "path");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("path");
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
