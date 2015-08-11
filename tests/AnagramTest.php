@@ -17,5 +17,22 @@
 			//Assert
 			$this->assertEquals($answer, $result);			
 		}
+		
+		function testSelfMatch()
+		{
+			//Arrange
+			$test = new Anagram;
+			$inputWord = "An";
+			$inputList = array("An");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("No anagrams");
+			//Assert
+			$this->assertEquals($answer, $result);			
+		}
+		
+		
 	}
 ?>
