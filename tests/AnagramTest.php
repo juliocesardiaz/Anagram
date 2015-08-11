@@ -15,8 +15,7 @@
 			
 			$answer = array("No anagrams");
 			//Assert
-			$this->assertEquals($answer, $result);
-			
+			$this->assertEquals($answer, $result);			
 		}
 	}
 ?>
