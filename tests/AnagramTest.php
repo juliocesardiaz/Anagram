@@ -3,17 +3,17 @@
 	
 	class AnagramTest extends PHPUnit_Framework_TestCase
 	{
-		function testSimpleAnagram()
+		function testSingleLetter()
 		{
 			//Arrange
 			$test = new Anagram;
-			$inputWord = "ear";
-			$inputList = array("dog", "bat", "era");
+			$inputWord = "I";
+			$inputList = array("I");
 			
 			//Act
 			$result = $test->checkAnagram($inputWord, $inputList);
 			
-			$answer = array("era");
+			$answer = array("No anagrams");
 			//Assert
 			$this->assertEquals($answer, $result);
 			
