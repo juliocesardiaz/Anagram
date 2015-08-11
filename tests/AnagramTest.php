@@ -33,6 +33,20 @@
 			$this->assertEquals($answer, $result);			
 		}
 		
+		function testTwoLetter()
+		{
+			//Arrange
+			$test = new Anagram;
+			$inputWord = "Am";
+			$inputList = array("Ma", "No");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("Ma");
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
 		
 	}
 ?>
