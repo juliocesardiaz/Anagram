@@ -48,5 +48,36 @@
 			$this->assertEquals($answer, $result);
 		}
 		
+		function testThreeLetter()
+		{
+			//Arrange
+			$test = new Anagram;
+			$inputWord = "arm";
+			$inputList = array("ram", "man", "the");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("ram");
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
+		
+		function testFourLetter()
+		{
+			//Arrange
+			$test = new Anagram;
+			$inputWord = "laws";
+			$inputList = array("slaw", "ears", "dogs");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("ram");
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
+		
+		
 	}
 ?>
