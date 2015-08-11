@@ -3,6 +3,7 @@
 	
 	class AnagramTest extends PHPUnit_Framework_TestCase
 	{
+		//test first spec
 		function testSingleLetter()
 		{
 			//Arrange
@@ -17,7 +18,7 @@
 			//Assert
 			$this->assertEquals($answer, $result);			
 		}
-		
+		//test second spec
 		function testSelfMatch()
 		{
 			//Arrange
@@ -32,7 +33,7 @@
 			//Assert
 			$this->assertEquals($answer, $result);			
 		}
-		
+		//test third spec
 		function testTwoLetter()
 		{
 			//Arrange
@@ -47,7 +48,7 @@
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
-		
+		//test fourth spec
 		function testThreeLetter()
 		{
 			//Arrange
@@ -62,7 +63,7 @@
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
-		
+		//test fifth spec
 		function testFourLetter()
 		{
 			//Arrange
@@ -73,7 +74,22 @@
 			//Act
 			$result = $test->checkAnagram($inputWord, $inputList);
 			
-			$answer = array("ram");
+			$answer = array("slaw");
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
+		//test sixth spec
+		function testMultipleLengthInput()
+		{
+			//Arrange
+			$test = new Anagram;
+			$inputWord = "cars";
+			$inputList = array("scar", "ears", "dogs", "scars");
+			
+			//Act
+			$result = $test->checkAnagram($inputWord, $inputList);
+			
+			$answer = array("scar");
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
