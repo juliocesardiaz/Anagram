@@ -11,11 +11,13 @@ and partial matches. If no anagrams are found, the user will be told there are n
 
 ## Setup
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Open Terminal
+* Install Composer. Instructions: https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx
+* Run command :composer install
+* Enter the web directory in Anagram using terminal
+* Enter the following command into termianl 'php -S localhost:8000'
+* Open a web browser and type this into the address bar 'localhost:8000'
+
 
 _{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
 
